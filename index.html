@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Pinito · Helados artesanales en San Rafael</title>
+<meta name="description" content="El Pinito, helados artesanales en San Rafael, Mendoza. 72 sabores, paletas, postres y potes por kilo. Armá tu pote y pedilo por WhatsApp.">
+<meta name="theme-color" content="#FFF8F0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&display=swap">
+<link rel="icon" href="assets/marca/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+<meta name="robots" content="noindex">
+<meta property="og:title" content="El Pinito · Helados artesanales en San Rafael">
+<meta property="og:description" content="Propuesta de web: los 72 sabores, armá tu pote y pedido por WhatsApp.">
+<meta property="og:image" content="https://warcrock.github.io/el-pinito/assets/marca/vista-previa.png">
+<meta property="og:url" content="https://warcrock.github.io/el-pinito/">
+<meta property="og:type" content="website">
+</head>
+<body>
+<div style="background:var(--ink);color:var(--bg);font:600 14px/1.4 system-ui,sans-serif;text-align:center;padding:10px 16px">Propuesta de web de Axis para El Pinito. Es una demo: los pedidos que armes acá me llegan a mí, no al WhatsApp del local.</div>
+
+<a class="skip" href="#vitrina">Saltar a los sabores</a>
+
+<header class="hero" id="inicio">
+  <div class="hero-top">
+    <h1 class="wordmark"><span class="wm-name">El Pinito</span><span class="wm-sub">Helados artesanales en San Rafael</span></h1>
+    <div class="hero-say">
+      <p>Empresa familiar con más de diez años en San Rafael. 72 sabores, paletas, postres y potes por kilo, en Av. Hipólito Yrigoyen 1565.</p>
+      <p class="open" data-open><span class="dot" aria-hidden="true"></span><span data-open-txt>Pedidos todos los días desde las 12:00</span></p>
+    </div>
+  </div>
+
+  <div class="floats" aria-hidden="true" data-floats></div>
+
+  <div class="plinth" aria-live="off">
+    <div class="plinth-pad"></div>
+    <div class="stickers" aria-hidden="true"><span class="stk s1">72<small>sabores</small></span><span class="stk s2">+10<small>años</small></span><span class="stk s3">San<br>Rafael</span></div>
+    <figure class="slide on" data-bg="#FFC2CC"><img src="assets/productos/rocher.jpg" width="800" height="800" alt="Paleta Rocher, bañada en chocolate con trocitos de avellana"><figcaption>Paleta Rocher · $ 5.000</figcaption></figure>
+    <figure class="slide" data-bg="#BFE3F5"><img src="assets/productos/minions.jpg" width="800" height="800" alt="Paleta Minions, celeste y amarilla con cara de Minion" loading="lazy"><figcaption>Paleta Minions · $ 5.000</figcaption></figure>
+    <figure class="slide" data-bg="#F3D3A1"><img src="assets/productos/ositos.jpg" width="800" height="800" alt="Paleta Ositos con forma de oso, cobertura blanca y negra" loading="lazy"><figcaption>Paleta Ositos · $ 5.000</figcaption></figure>
+    <figure class="slide" data-bg="#CFE3A8"><img src="assets/productos/frutales.jpg" width="800" height="800" alt="Paleta frutal de frutilla con una rodaja de kiwi" loading="lazy"><figcaption>Paleta frutal · $ 4.000</figcaption></figure>
+    <figure class="slide" data-bg="#F6EE9A"><img src="assets/productos/caritas.jpg" width="800" height="800" alt="Paleta Caritas con una cara sonriente y confites" loading="lazy"><figcaption>Paleta Caritas · $ 5.000</figcaption></figure>
+  </div>
+
+  <div class="hero-act">
+    <a class="btn" href="#pote">Armá tu pote</a>
+    <a class="btn-line" href="#carta">Ver la carta</a>
+  </div>
+</header>
+
+<div class="cinta" aria-hidden="true"><div class="cinta-track" data-cinta></div></div>
+
+<main>
+
+<section class="band" aria-labelledby="t-band">
+  <div class="band-img"><img data-zoom src="assets/mundo/delicious-gelato-on-display.jpg" width="1800" height="1800" alt="Bateas de helado artesanal en una vitrina; una mano sirve un cucurucho de chocolate"></div>
+  <div class="band-card">
+    <h2 id="t-band">Se elige mirando la vitrina.</h2>
+    <p>El helado artesanal entra por los ojos: colores, texturas, trocitos. Por eso acá la vitrina va primero, con los 72 sabores.</p>
+    <a class="btn" href="#vitrina">Ver los sabores</a>
+  </div>
+</section>
+
+<section class="vitrina" id="vitrina" aria-labelledby="t-vitrina">
+  <div class="cat-head">
+    <h2 id="t-vitrina">La vitrina</h2>
+    <p class="count"><span data-count>72</span> sabores</p>
+  </div>
+  <p class="lead">Como en el mostrador: cada sabor en su batea. Tocá uno y va directo a tu pote. El de la casa es el Chocolate Pinito, chocolate blanco con pistacho.</p>
+  <div class="filters" role="group" aria-label="Familia de sabores">
+    <button type="button" aria-pressed="true" data-fam="todos">Todos</button>
+  </div>
+  <div class="case" data-tiles></div>
+</section>
+
+<section class="pote" id="pote" aria-labelledby="t-pote">
+  <div class="pote-ctrl">
+    <h2 id="t-pote">Armá tu pote</h2>
+    <p>Elegí el tamaño y los sabores. El pedido se arma solo y lo mandás por WhatsApp.</p>
+    <fieldset class="sizes">
+      <legend>Tamaño</legend>
+      <div data-sizes></div>
+    </fieldset>
+    <div class="picked">
+      <p class="picked-h"><span>Sabores</span> <b data-left></b></p>
+      <ul class="chips" data-picked></ul>
+      <label class="search"><span class="sr">Buscar un sabor</span><input type="search" placeholder="Buscá un sabor: pistacho, sambayón…" data-search autocomplete="off"></label>
+      <ul class="finder" data-finder></ul>
+    </div>
+    <div class="extras">
+      <span>Barquillos <small>$ 500 c/u</small></span>
+      <div class="step"><button type="button" data-barq="-1" aria-label="Sacar un barquillo">−</button><output data-barq-n>0</output><button type="button" data-barq="1" aria-label="Sumar un barquillo">+</button></div>
+    </div>
+    <button type="button" class="btn-line wide" data-add-pote>Sumar este pote y armar otro</button>
+  </div>
+
+  <div class="pote-viz" aria-hidden="true">
+    <svg viewBox="0 0 260 340" data-pote-svg>
+      <g data-pote-scale>
+        <g data-scoops></g>
+        <path class="cup" d="M28 150 H232 L206 330 H54 Z"/>
+        <rect class="rim" x="18" y="138" width="224" height="22" rx="8"/>
+        <text class="cup-t" x="130" y="232" text-anchor="middle">MMMM</text>
+        <text class="cup-t sm" x="130" y="268" text-anchor="middle">QUÉ RICO</text>
+        <text class="cup-p" x="130" y="306" text-anchor="middle">EL PINITO</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="slip-wrap">
+    <div class="slip" aria-live="polite">
+      <p class="slip-h">El Pinito</p>
+      <p class="slip-sub">Tu pedido</p>
+      <ul class="slip-rows" data-rows></ul>
+      <p class="slip-total"><span>Total</span><b data-total>$ 0</b></p>
+    </div>
+    <a class="btn wide" data-wa href="#" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+    <p class="slip-note">Te contestan por WhatsApp para coordinar el retiro o el envío. También podés pedir en <a href="https://el-pinito.ola.click/products" target="_blank" rel="noopener">su tienda online</a>.</p>
+  </div>
+</section>
+
+<section class="paletas" id="paletas" aria-labelledby="t-paletas">
+  <div class="disc-stage">
+    <div class="disc" data-disc></div>
+    <img class="disc-img" data-disc-img src="assets/productos/rocher.jpg" width="800" height="800" alt="Paleta Rocher">
+    <p class="disc-fact"><b data-disc-price>$ 5.000</b><span data-disc-desc>Rellena de Ferrero Rocher.</span><button type="button" class="btn small" data-disc-add>Sumar al pedido</button></p>
+  </div>
+  <div class="names">
+    <h2 id="t-paletas">Las paletas</h2>
+    <ul role="list" data-names></ul>
+  </div>
+</section>
+
+<section class="galeria" id="galeria" aria-labelledby="t-gal">
+  <h2 id="t-gal" class="gal-t">Helado artesanal <span>14 fotos · arrastrá</span></h2>
+  <ul class="strip" data-strip tabindex="0" aria-label="Fotos de helado artesanal y paletas de El Pinito">
+    <li class="fr"><img src="assets/mundo/gelato-in-italy.jpg" width="1800" height="1138" alt="Vitrina de helados con frutas y galletitas decorando cada batea" loading="lazy" draggable="false"></li>
+    <li class="fr own" style="--f:var(--f-cielo)"><img src="assets/productos/minions.jpg" width="800" height="800" alt="Paleta Minions de El Pinito" loading="lazy" draggable="false"></li>
+    <li class="fr"><img src="assets/mundo/cherry-ice-cream-cone.jpg" width="1209" height="1768" alt="Cucurucho con una gran bocha de helado de cereza" loading="lazy" draggable="false"></li>
+    <li class="fr"><img src="assets/mundo/fruit-sorbetto-at-gelato-naia-september-8.jpg" width="1800" height="1200" alt="Bateas de helado frutal decoradas con kiwi, uvas y ciruelas" loading="lazy" draggable="false"></li>
+    <li class="fr own" style="--f:var(--f-ddl)"><img src="assets/productos/ositos.jpg" width="800" height="800" alt="Paleta Ositos de El Pinito" loading="lazy" draggable="false"></li>
+    <li class="fr"><img src="assets/mundo/ice-cream-in-cones.jpg" width="1800" height="1350" alt="Tres cucuruchos con bochas de chocolate, pistacho y dulce de leche, uno con confites" loading="lazy" draggable="false"></li>
+    <li class="fr"><img src="assets/mundo/cream-caramel-ice-cream-scooped-up-with.jpg" width="1800" height="1373" alt="Cuchara sacando helado de crema y caramelo de la batea" loading="lazy" draggable="false"></li>
+    <li class="fr own" style="--f:var(--f-pist)"><img src="assets/productos/frutales.jpg" width="800" height="800" alt="Paleta frutal de El Pinito con kiwi" loading="lazy" draggable="false"></li>
+    <li class="fr"><img src="assets/mundo/gelato-artigianale-italiano-bertinelli.jpg" width="1800" height="1356" alt="Vitrina de helado artesanal con bateas de colores" loading="lazy" draggable="false"></li>
+    <li class="fr"><img src="assets/mundo/mango-gelato-9368461646.jpg" width="1800" height="1350" alt="Cucurucho de helado de mango a la sombra" loading="lazy" draggable="false"></li>
+    <li class="fr"><img src="assets/mundo/helado-8126289876.jpg" width="1800" height="1200" alt="Dos cucuruchos de helado en la mano" loading="lazy" draggable="false"></li>
+    <li class="fr own" style="--f:var(--f-frut)"><img src="assets/productos/caritas.jpg" width="800" height="800" alt="Paleta Caritas de El Pinito" loading="lazy" draggable="false"></li>
+    <li class="fr"><img src="assets/mundo/gelato-ice-cream.jpg" width="1800" height="1145" alt="Bateas de helado con salsa de frutos rojos y pistacho" loading="lazy" draggable="false"></li>
+    <li class="fr"><img src="assets/mundo/2-ice-cream-cones-2025-05-02.jpg" width="1800" height="1356" alt="Dos cucuruchos de helado frente al mar" loading="lazy" draggable="false"></li>
+  </ul>
+</section>
+
+<section class="carta" id="carta" aria-labelledby="t-carta">
+  <h2 id="t-carta" class="carta-title">La carta</h2>
+  <nav class="carta-nav" aria-label="Categorías de la carta" data-carta-nav></nav>
+  <div data-carta></div>
+</section>
+
+<section class="nos" id="nosotros" aria-labelledby="t-nos">
+  <h2 id="t-nos">Una familia, más de diez años de helado.</h2>
+  <p class="nos-p">El Pinito es una empresa familiar de San Rafael que hace helado artesanal hace más de diez años.</p>
+  <ul class="facts">
+    <li style="--f:var(--f-frut)"><b>+10</b><span>años haciendo helado</span></li>
+    <li style="--f:var(--f-pist)"><b>72</b><span>sabores en la vitrina</span></li>
+    <li style="--f:var(--f-ddl)"><b>14</b><span>paletas distintas</span></li>
+    <li style="--f:var(--f-cielo)"><b>12:00</b><span>pedidos online todos los días desde el mediodía</span></li>
+  </ul>
+</section>
+
+<section class="visit" id="visita" aria-labelledby="t-visit">
+  <h2 id="t-visit" class="sr">Promo y visita</h2>
+  <div class="coupon">
+    <div class="cp-l">
+      <p class="cp-h">Kilo + 4 barquillos</p>
+      <p class="cp-p">$ 22.000</p>
+      <p class="cp-s">Promo pagando en efectivo: un kilo con cuatro sabores a elección y cuatro barquillos. Hasta agotar existencias.</p>
+      <button type="button" class="btn dark" data-promo>Armar la promo</button>
+    </div>
+    <div class="cp-r">
+      <p class="cp-h2">Visitanos</p>
+      <p class="cp-addr">Av. Hipólito Yrigoyen 1565<br>San Rafael, Mendoza</p>
+      <dl class="hours">
+        <div class="hours-h"><dt>Horario de pedidos</dt><dd></dd></div>
+        <div><dt>Domingo a jueves</dt><dd>12:00 a 00:15</dd></div>
+        <div><dt>Viernes y sábado</dt><dd>12:00 a 01:00</dd></div>
+      </dl>
+      <p class="open on-dark" data-open><span class="dot" aria-hidden="true"></span><span data-open-txt>Todos los días desde las 12</span></p>
+      <div class="cp-act">
+        <a class="btn-line on-dark" href="https://www.google.com/maps/search/?api=1&query=-34.609878,-68.3491003" target="_blank" rel="noopener">Cómo llegar</a>
+        <a class="btn-line on-dark" href="https://www.instagram.com/elpinito_helados/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="blocks" aria-hidden="true">
+    <span style="--h:100%;--c:var(--f-frut)">P</span><span style="--h:78%;--c:var(--f-pist)">I</span><span style="--h:92%;--c:var(--f-ddl)">N</span><span style="--h:70%;--c:var(--f-cielo)">I</span><span style="--h:86%;--c:var(--f-limon)">T</span><span style="--h:96%;--c:var(--f-salvia)">O</span>
+  </div>
+  <div class="foot-row">
+    <ul><li><a href="#vitrina">La vitrina</a></li><li><a href="#pote">Armá tu pote</a></li><li><a href="#paletas">Paletas</a></li><li><a href="#carta">La carta</a></li></ul>
+    <ul><li><a href="https://el-pinito.ola.click/products" target="_blank" rel="noopener">Tienda online</a></li><li><a href="https://www.instagram.com/elpinito_helados/" target="_blank" rel="noopener">Instagram</a></li><li><a data-wa-plain href="https://wa.me/5492604670292" target="_blank" rel="noopener">WhatsApp</a></li></ul>
+    <address>Av. Hipólito Yrigoyen 1565<br>San Rafael, Mendoza</address>
+  </div>
+  <p class="legal"><span>© 2026 El Pinito Helados Artesanales</span><span>Propuesta de web hecha por Axis</span></p>
+  <p class="credits">Fotos de helado artesanal (no son de El Pinito), vía Wikimedia Commons: <span data-credits></span></p>
+</footer>
+
+<p class="toast" role="status" aria-live="polite" data-toast></p>
+
+<a class="bag" href="#pote" data-bag hidden><span data-bag-n>0</span> en tu pedido · <b data-bag-t>$ 0</b></a>
+
+<script src="data.js"></script>
+<script src="main.js" defer></script>
+</body>
+</html>
